@@ -104,7 +104,7 @@ public class ProductController {
         return productDao.chercherUnProduitCher(400);
     }
 
-    //retourner mage
+    //retourner marge
 
  	@RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
 
@@ -118,5 +118,16 @@ public class ProductController {
          return list;
      }
     
+ 	
+    //Récupérer la liste des produits trié
+
+    @RequestMapping(value = "/ProduitsTrie", method = RequestMethod.GET)
+
+    public MappingJacksonValue trierProduitsParOrdreAlphabetique() {
+    	
+    	MappingJacksonValue produitsTries = new MappingJacksonValue(productDao.trierProduitsParOrdreAlpha());
+
+    	return produitsTries ;
+    }
 
 }
