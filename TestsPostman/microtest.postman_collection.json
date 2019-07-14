@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "microtest",
+		"_postman_id": "0781abef-7643-b64d-4ffb-fad27cd3a421",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/AdminProduits",
+			"request": {
+				"url": "http://localhost:9090/AdminProduits",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Poney en bois cracheur de feu\",\r\n  \"prix\": 145\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/ProduitsTrie",
+			"request": {
+				"url": "http://localhost:9090/ProduitsTrie",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 4,\r\n  \"nom\": \"Poney en bois cracheur de feu\",\r\n  \"prix\": 145\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"url": "http://localhost:9090/Produits",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Poney en bois\",\r\n  \"prix\": 145,\r\n  \"prixAchat\": 0\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
